@@ -15,15 +15,46 @@
 
   <div class="container">
     <div class="row hidden-xs">
-      <div class="col-md-2">
-        Logo goes here
+      <div class="col-md-1">
+        <span class="glyphicon glyphicon-ice-lolly-tasted"></span>
       </div>
       <div class="col-md-4">
-        | Product selection menu goes here |
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            Selected product
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Product 1</a></li>
+            <li><a href="#">Product 2</a></li>
+            <li><a href="#">Product n</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div class="pull-right">
-          search box goes here | profile menu selection goes here
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="pull-right">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+              Welcome, user
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Contact Support</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -31,7 +62,7 @@
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="visible-xs navbar-brand" href="#">hello</a>
+            <a class="visible-xs navbar-brand" href="#">Logo on small screen</a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -44,6 +75,9 @@
               <li class="active"><a href="#">Link 1</a></li>
               <li class="active"><a href="#">Link 2</a></li>
               <li class="active"><a href="#">Link 3</a></li>
+              <li class="active visible-xs"><a href="#">Product selection menu</a></li>
+              <li class="active visible-xs"><a href="#">Search box</a></li>
+              <li class="active visible-xs"><a href="#">Profile links</a></li>
             </ul>
           </div>
         </div>
