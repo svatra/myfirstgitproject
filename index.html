@@ -1,32 +1,53 @@
-<!doctype>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <title>
     My first project
   </title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="js/bootstrap/min.js"></script>
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/controller.js"></script>
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="span1">
+
+  <div class="container">
+    <div class="row hidden-xs">
+      <div class="col-md-2">
         Logo goes here
       </div>
-      <div class="span2">
+      <div class="col-md-4">
         | Product selection menu goes here |
       </div>
-      <div class="span9">
+      <div class="col-md-6">
         <div class="pull-right">
           search box goes here | profile menu selection goes here
         </div>
       </div>
     </div>
     <div class="row">
-      
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="visible-xs navbar-brand" href="#">hello</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height:1px;">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Link 1</a></li>
+              <li class="active"><a href="#">Link 2</a></li>
+              <li class="active"><a href="#">Link 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
     <div class="row">
       Product space
